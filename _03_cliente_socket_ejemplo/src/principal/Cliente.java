@@ -8,7 +8,7 @@ import java.io.PrintStream;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-public class Cliente {
+public class Cliente   {
 
 	public static void main(String[] args) throws UnknownHostException, IOException {
 			
