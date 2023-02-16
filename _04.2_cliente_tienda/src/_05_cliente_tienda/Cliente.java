@@ -1,4 +1,4 @@
-package principal;
+package _05_cliente_tienda;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,12 +12,11 @@ public class Cliente {
 
 	public static void main(String[] args) throws UnknownHostException, IOException {
 			
-		Socket socket=new Socket("A13E100",8000);// creamos el objeto de socket
+		Socket socket=new Socket("localhost",8000);// creamos el objeto de socket
 		OutputStream os= socket.getOutputStream();
 		PrintStream out=new PrintStream(os);
 		out.println("Compra pan");
 		BufferedReader bf=new BufferedReader(new InputStreamReader (socket.getInputStream()));
 		System.out.println(bf.readLine());
 	}
-
 }
